@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="Pt -Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore| Ecommerce Website </title>
+    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+<div class="header"> 
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"> <img src="images/logo.png" alt="imagem logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="account.html">Acesso</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>De ao seu treino <br> Um novo estilo!</h1>
+                <p>Sucesso nem sempre significa grandeza. É uma questão de consistetência. <br> O trabalho árduo consistente obtém sucesso. A grandeza virá.</p>
+                <a href="" class="btn">Navegue agora &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image1.png">
+            </div>
+        </div>
+    </div>
+ </div>
+  
+<!-- Apresentação categoria  --> 
+<div class="categories">
+    <div class="small-container"> 
+       <div class="row">
+           <div class="col-3">
+               <img src="images/category-1.jpg">
+           </div>
+           <div class="col-3">
+            <img src="images/category-2.jpg">
+           </div>
+           <div class="col-3">
+            <img src="images/category-3.jpg">
+           </div>
+       </div>
+    </div>
+</div>
+<!-- Apresentação produtos -->
+<div class="small-container">
+    <h2 class="title">Produtos em Destaque</h2>
+    <div class="row">
+        <div class="col-4">
+           <a href="produtos-details.html"> <img src="images/product-1.jpg"></a>
+            <h4>Camiseta vermelha estampada</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-2.jpg">
+            <h4>HRX </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$300,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-3.jpg">
+            <h4>Calça moletom</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$170,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-4.jpg">
+            <h4>Camiseta pollo puma </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$80,00</p>
+        </div>
+    </div>
+    <h2 class="title">Produtos adicionados recentes</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>Tênis casual</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$400,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-6.jpg">
+            <h4>T-surt puma</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-7.jpg">
+            <h4>Meias HRX</h4> </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$35,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-8.jpg">
+            <h4>Relógio fossil</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$600,00</p>
+        </div>
+    </div>
+    <h2 class="title">Produtos adicionados recentes</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-9.jpg">
+            <h4>Relógio Roadster</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$250,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>Tênis HRX</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$299,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4>Tênis feminino</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$199,99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>Calça moletom nike </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$120,00</p>
+        </div>
+    </div>  
+</div> 
+<!-- Ofertas -->
+  <div class="offer">
+      <div class="small-container">
+          <div class="row">
+              <div class="col-2">
+                  <img src="images/exclusive.png" class="offer-img">
+              </div>
+              <div class="col-2">
+                  <p>Disponivel Exclusivamente na RedStore</p>
+                  <h1>Smart Band 4</h1>
+                  <small>O smart Band 4 apresenta uma tela amoled 39,9% maior que (smart band 3) com brilho ajustável, para que tudo seja claro como pode.</small>
+                  <br>
+                  <a href="" class="btn">Compre agora &#8594;</a>
+                </div>
+          </div>
+      </div>
+  </div>
+<!-- Avaliações -->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iure. Omnis asperiores quisquam obcaecati ullam, sed beatae atque totam minus, dolorum error distinctio accusantium aut delectus sequi excepturi deserunt assumenda?</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user-1.png">
+                <h3>Sean Parker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iure. Omnis asperiores quisquam obcaecati ullam, sed beatae atque totam minus, dolorum error distinctio accusantium aut delectus sequi excepturi deserunt assumenda?</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user-2.png">
+                <h3>Mike Smith</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iure. Omnis asperiores quisquam obcaecati ullam, sed beatae atque totam minus, dolorum error distinctio accusantium aut delectus sequi excepturi deserunt assumenda?</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user-3.png">
+                <h3>Mabel Joe</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Marcas -->
+<div class="brans">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-oppo.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Rodapé -->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>Download do App</h3>
+                  <p>Dowload app em Android e Ios </p>
+                  <div class="app-logo">
+                      <img src="images/play-store.png">
+                      <img src="images/app-store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Nosso objetivo é tornar o prazer e os beefícios do esporte acessiveis para todos.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Links Úteis </h3>
+                 <UL>
+                     <li>Cupons</li>
+                     <li>Blog</li>
+                     <li>politica de segurança</li>
+                     <li>junte-se  um afiliado</li>
+                 </UL>
+            </div>
+            <div class="footer-col-3">
+                <h3>Siga nossas redes </h3>
+                 <UL>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>Youtube</li>
+                 </UL>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - Beatriz Romão</p>
+      </div>
+  </div>
+<!-- JS para alterar o menu -->
+<script>
+    var menuitems = document.getElementById("menuitems")
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(menuitems.style.maxHeight == "0px")   
+      {
+         menuitems.style.maxHeight = "200px"; 
+      }
+      else
+      {
+          menuitems.style.maxHeight = "0px";
+      }
+    }
+</script>
+</body>
+</html>

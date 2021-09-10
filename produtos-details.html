@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="Pt -Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de produtos|RedStore| </title>
+    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" alt="imagem logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="account.html">Acesso</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>   
+    </div>
+
+    <!-- detalhes de produtos individuais  -->
+
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
+                   
+                <div class="small-img-row">
+                      <div class="small-img-col">
+                          <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                      </div>  
+                      <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                     </div>  
+                     <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                    </div>  
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                    </div>  
+                 </div>
+<!-- Titulo -->
+                </div>
+                <div class="col-2">
+                    <p> Home | T-Shirt</p>
+                    <h1>Camiseta vermelha estampada</h1>
+                    <h4>R$50,00</h4>
+                    <select>
+                        <option>Tamanho</option>
+                        <option>GG</option>
+                        <option>G</option>
+                        <option>M</option>
+                        <option>P</option>
+                        <option>PP</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="cart.html" class="btn">Adicionar ao carrinho</a>
+
+                    <h3>Detalhes do produto <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Dê ao seu guarda-roupa de verão um upgrade de estilo com a camiseta ativa masculina HRX. Combine com um short para o treino matinal ou um jeans para uma saída à noite com os rapazes.</p>
+                </div>
+            </div>
+        </div>
+ 
+<!-- Titulo produtos  -->
+<div class="small-container">
+    <div class="row row-2"> 
+        <h2>Produtos relacionados</h2>
+        <p>Veja mais</p>
+    </div>
+</div>
+
+         <div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-2.jpg">
+            <h4>Camiseta vermelha estampada</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-3.jpg">
+            <h4>Camiseta vermelha estampada</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-4.jpg">
+            <h4>Camiseta vermelha estampada</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>Camiseta vermelha estampada</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$50,00</p> 
+   
+ </div>
+</div>
+
+
+<!-- Rodapé -->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>Download do App</h3>
+                  <p>Dowload app em Android e Ios </p>
+                  <div class="app-logo">
+                      <img src="images/play-store.png">
+                      <img src="images/app-store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Nosso objetivo é tornar o prazer e os beefícios do esporte acessiveis para todos.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Links Úteis </h3>
+                 <UL>
+                     <li>Cupons</li>
+                     <li>Blog</li>
+                     <li>politica de segurança</li>
+                     <li>junte-se  um afiliado</li>
+                 </UL>
+            </div>
+            <div class="footer-col-3">
+                <h3>Siga nossas redes </h3>
+                 <UL>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>Youtube</li>
+                 </UL>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - Beatriz Romão</p>
+      </div>
+  </div>
+<!-- JS para alterar o menu -->
+<script>
+    var menuitems = document.getElementById("menuitems")
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(menuitems.style.maxHeight == "0px")   
+      {
+         menuitems.style.maxHeight = "200px"; 
+      }
+      else
+      {
+          menuitems.style.maxHeight = "0px";
+      }
+    }
+</script>
+ 
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    SmallImg[0].onclick = function(){
+       ProductImg.src = SmallImg[0].src; 
+    }
+    SmallImg[1].onclick = function(){
+       ProductImg.src = SmallImg[1].src; 
+    }
+    SmallImg[2].onclick = function(){
+       ProductImg.src = SmallImg[2].src; 
+    }
+    SmallImg[3].onclick = function(){
+       ProductImg.src = SmallImg[3].src; 
+    }
+</script>
+</body>
+</html>

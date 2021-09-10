@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="Pt -Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de produtos|RedStore| </title>
+    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" alt="imagem logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="account.html">Acesos</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>   
+    </div>
+
+    <!-- acesso a página -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="/images/image1.png" width="100%">
+            </div>
+
+            <div class="col-2">
+               <div class="form-container">
+                  <div class="form-btn">
+                      <span onclick="login()">Login</span>
+                      <span onclick="cadastrar()">Cadastrar</span>
+                      <hr id="Indicator">
+                  </div> 
+                  <form id="LoginForm">
+                      <input type="text" placeholder="Username">
+                      <input type="password" placeholder="Senha">
+                      <button type="submit" class="btn">Login</button>
+                      <a href="">Esqueci a senha</a>
+                  </form>
+
+                  <form id="RegForm">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <button type="submit" class="btn">Registre-se</button>
+                   
+               </div> 
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<!-- Rodapé -->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>Download do App</h3>
+                  <p>Dowload app em Android e Ios </p>
+                  <div class="app-logo">
+                      <img src="images/play-store.png">
+                      <img src="images/app-store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Nosso objetivo é tornar o prazer e os beefícios do esporte acessiveis para todos.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Links Úteis </h3>
+                 <UL>
+                     <li>Cupons</li>
+                     <li>Blog</li>
+                     <li>politica de segurança</li>
+                     <li>junte-se  um afiliado</li>
+                 </UL>
+            </div>
+            <div class="footer-col-3">
+                <h3>Siga nossas redes </h3>
+                 <UL>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>Youtube</li>
+                 </UL>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - Beatriz Romão</p>
+      </div>
+  </div>
+<!-- JS para alterar o menu -->
+<script>
+    var menuitems = document.getElementById("menuitems")
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(menuitems.style.maxHeight == "0px")   
+      {
+         menuitems.style.maxHeight = "200px"; 
+      }
+      else
+      {
+          menuitems.style.maxHeight = "0px";
+      }
+    }
+</script>
+<!-- JS página usuario -->
+<script>
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+
+    function cadastrar(){
+
+          RegForm.style.transform = "translateX(0px)";
+          LoginForm.style.transform = "translateX(0px)";
+          Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login(){
+
+         RegForm.style.transform = "translateX(300px)";
+         LoginForm.style.transform = "translateX(300px)";
+         Indicator.style.transform = "translateX(0px)";
+}
+
+</script>
+</body>
+</html>

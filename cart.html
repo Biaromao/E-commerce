@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="Pt -Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de produtos|RedStore| </title>
+    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" alt="imagem logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="account.html">Acesso</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>   
+    </div>
+
+   <!-- Itens carrinho -->
+   <div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="../images/buy-1.jpg">   
+                <div>
+                    <p>Camiseta vermelha estampada</p>
+                    <small>Valor: R$ 50,00</small>
+                    <br>
+                    <a href="">remove</a>
+                </div>  
+            </div>
+
+           </td>
+             <td><input type="number" value="1"></td>
+             <td>R$50,00</td>
+        </tr>
+        <tr>
+            <td>
+              <div class="cart-info">
+                <img src="../images/buy-2.jpg">   
+                  <div>
+                      <p>HRX</p>
+                      <small>Valor: R$ 300,00</small>
+                      <br>
+                      <a href="">remove</a>
+                  </div>  
+              </div>
+  
+             </td>
+               <td><input type="number" value="1"></td>
+               <td>R$300,00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="../images/buy-3.jpg">   
+                  <div>
+                      <p>Calça moletom</p>
+                      <small>Valor: R$ 170,00</small>
+                      <br>
+                      <a href="">remove</a>
+                  </div>  
+              </div>
+  
+             </td>
+               <td><input type="number" value="1"></td>
+               <td>R$170,00</td>
+          </tr>
+    </table>
+  
+
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>R$520,00</td>
+        </tr>
+        <tr>
+            <td>Taxa</td>
+            <td>R$30,00</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>R$550,00</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+<!-- Rodapé -->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>Download do App</h3>
+                  <p>Dowload app em Android e Ios </p>
+                  <div class="app-logo">
+                      <img src="images/play-store.png">
+                      <img src="images/app-store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Nosso objetivo é tornar o prazer e os beefícios do esporte acessiveis para todos.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Links Úteis </h3>
+                 <UL>
+                     <li>Cupons</li>
+                     <li>Blog</li>
+                     <li>politica de segurança</li>
+                     <li>junte-se  um afiliado</li>
+                 </UL>
+            </div>
+            <div class="footer-col-3">
+                <h3>Siga nossas redes </h3>
+                 <UL>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>Youtube</li>
+                 </UL>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - Beatriz Romão</p>
+      </div>
+  </div>
+<!-- JS para alterar o menu -->
+<script>
+    var menuitems = document.getElementById("menuitems")
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(menuitems.style.maxHeight == "0px")   
+      {
+         menuitems.style.maxHeight = "200px"; 
+      }
+      else
+      {
+          menuitems.style.maxHeight = "0px";
+      }
+    }
+</script>
+</body>
+</html>
